@@ -27,15 +27,15 @@ contract My_Token is ERC20,Ownable {
     function burnToken(address account,uint256 amount) public{
         require(account != address(0), "Invalid: Zero Address");
         if(balances[account] < amount){
-            revert("ERC20: burn amount exceeds balance");
+            revert("Burn amount exceeds balance");
         }
         balances[account] -= amount;
         total_Supply -= amount;
     }
 
      function transferToken(address sender, address recipient, uint256 amount) public returns(bool){
-        require(sender != address(0), "Invalid sender address (Zero address) ");
-        require(recipient != address(0), "Invalid recipient address (Zero address)");
+        require(sender != address(0), "Invalid sender address (Zero address '0x0000000000000000000000000000000000000000') ");
+        require(recipient != address(0), "Invalid recipient address (Zero address '0x0000000000000000000000000000000000000000')");
         assert(balances[sender] >= amount);
         balances[sender] -= amount;
         balances[recipient] += amount;
