@@ -6,12 +6,12 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 
 contract My_Token is ERC20,Ownable {
 
-     mapping(address => uint256) private balances;
+    mapping(address => uint256) private balances;
     uint256 private total_Supply;
 
     constructor() ERC20("CipherToken", "CPT") Ownable(msg.sender) {
         total_Supply = 0; 
-        balances[msg.sender] = total_Supply; // Assign total supply to owner's balance
+        balances[msg.sender] = total_Supply; 
     }
 
     function totalSupply() public view override returns (uint256) {
