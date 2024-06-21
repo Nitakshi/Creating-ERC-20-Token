@@ -29,11 +29,11 @@ To run this program you can use Remix IDE.
 
 - Import the ERC20 token standard implementation from OpenZeppelin contracts
 
-`import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";`
+ `import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";`
 
 - Import the Ownable contract from OpenZeppelin
 
-`import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";`
+ `import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";`
 
 
 ### Compiling and Deploying 
