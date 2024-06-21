@@ -44,9 +44,9 @@ To run this program you can use Remix IDE.
 
 - Within the Deployed/Unpinned Contracts, click on the deployed contract (i.e Token).
 
-- Click on `mintToken` function, provide account address to which you want to mint tokens and amount of tokens to mint. Click on the "Transact" button to execute and check totalSupply.
+- Click on `mintToken` function (only owner can mint tokens), provide account address to which you want to mint tokens and amount of tokens to mint. Click on the "Transact" button to execute and check totalSupply.
 - Click on `burnToken` function, provide account address from which you want to burn tokens and amount of tokens to burn. Click on the "Transact" button.
-- Click on `transferToken` function, provide sender address, recipient address and amount of tokens to transfer.
+- Click on `transferToken` function, provide sender address, recipient address and amount of tokens to transfer. Click on the "Transact" button, if the transfer is successful it will return true, else it will return false.
 
 ## Author
 
